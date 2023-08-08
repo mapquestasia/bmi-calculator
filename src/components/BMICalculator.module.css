@@ -101,6 +101,7 @@ button:hover {
   border-radius: 2rem;
   font-size: 1.25rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .message-box p {
