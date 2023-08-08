@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --c-black-900: rgb(0, 0, 0);
+  --c-black-800: rgb(19, 21, 25);
+  --c-black-500: rgb(32, 40, 49);
+  --c-black-300: rgb(50, 62, 77);
+  --c-black-100: rgb(81, 101, 124);
+  --c-gray: rgb(125, 136, 150);
+  --c-white: rgb(240, 240, 240);
+  --c-lightred: rgb(243, 108, 108);
+
+  --c-bmi-blue: rgb(75, 112, 180);
+  --c-bmi-green: rgb(57, 139, 77);
+  --c-bmi-orange: rgb(194, 90, 5);
+  --c-bmi-red: rgb(146, 44, 44);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  background-color: var(--c-black-800);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

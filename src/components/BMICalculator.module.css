@@ -1,0 +1,143 @@
+.container {
+  background-color: var(--c-black-500);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 500px;
+}
+
+.user-input {
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: var(--c-gray);
+  justify-content: space-between;
+}
+
+.user-input h1 {
+  color: var(--c-white);
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group .error {
+  color: var(--c-lightred);
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon input {
+  border-radius: 1.5rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+}
+
+.input-icon label {
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  transform: translate(-92%, -50%);
+  font-weight: 700;
+}
+
+button {
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.1s;
+  background-color: var(--c-black-300);
+  color: var(--c-white);
+}
+
+button:hover {
+  background-color: var(--c-gray);
+  color: var();
+  transition: all 0.1s;
+}
+
+.result {
+  text-align: center;
+  color: var(--c-white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.result p {
+  color: var(--c-gray);
+}
+
+.message-box {
+  color: var(--c-white);
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.message-box p {
+  color: var(--c-white);
+}
+
+.underweight {
+  background-color: var(--c-bmi-blue);
+}
+
+.normalweight {
+  background-color: var(--c-bmi-green);
+}
+
+.overweight {
+  background-color: var(--c-bmi-orange);
+}
+
+.obseity {
+  background-color: var(--c-bmi-red);
+}
+
+.type-line {
+  width: 70%;
+  height: 10px;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 425px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .user-input h1 {
+    font-size: 1.5rem;
+  }
+}
