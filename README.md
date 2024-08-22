@@ -1,6 +1,6 @@
 # BMI Calculator
 
-### Updated Read Me 8/22/2024
+### Updated Read Me 8/22/2024 from test-branch
 
 ### User input page
 
