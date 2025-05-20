@@ -77,7 +77,7 @@ button {
 
 button:hover {
   background-color: var(--c-gray);
-  color: var();
+  color: var(--c-black-800);
   transition: all 0.1s;
 }
 
@@ -120,7 +120,7 @@ button:hover {
   background-color: var(--c-bmi-orange);
 }
 
-.obseity {
+.obesity {
   background-color: var(--c-bmi-red);
 }
 

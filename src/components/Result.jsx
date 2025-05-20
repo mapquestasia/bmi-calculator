@@ -15,7 +15,7 @@ export const Result = ({ setIsResultScreen, bmi }) => {
       setMessage({ text: "Normal Weight", style: "normalweight" });
     else if (bmi < 29.9)
       setMessage({ text: "Overweight", style: "overweight" });
-    else setMessage({ text: "Obseity", style: "obseity" });
+    else setMessage({ text: "Obesity", style: "obesity" });
   }, []);
 
   return (
