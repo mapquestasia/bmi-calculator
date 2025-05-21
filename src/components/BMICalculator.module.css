@@ -63,6 +63,28 @@ form {
   font-weight: 700;
 }
 
+.unit-select {
+  border-radius: 1.5rem;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--c-black-300);
+  color: var(--c-white);
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.unit-select:focus {
+  outline: none;
+}
+
+.weight-control,
+.height-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 button {
   font-size: 1rem;
   border-radius: 1.5rem;
