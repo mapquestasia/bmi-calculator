@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-export const UserInput = ({ setIsResultScreen, setBmi }) => {
+export const UserInput = ({ setIsResultScreen, setBmi, addHistory }) => {
   //Validation Schema
   const schema = yup.object({
     weight: yup
@@ -47,6 +47,13 @@ export const UserInput = ({ setIsResultScreen, setBmi }) => {
     //BMI Formula : Weight(kg) / Height(m)^2
     const bmi = weight / heightInMeters ** 2;
     setBmi(bmi);
+    addHistory({
+      weight: data.weight,
+      weightUnit,
+      height: data.height,
+      heightUnit,
+      bmi,
+    });
     setIsResultScreen(true);
   };
 
