@@ -23,6 +23,7 @@ export const UserInput = ({ setIsResultScreen, setBmi }) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -91,7 +92,10 @@ export const UserInput = ({ setIsResultScreen, setBmi }) => {
             <p className={styles.error}>{errors.height?.message}</p>
           </div>
         </div>
-        <button type="submit">Calculate</button>
+        <div className={styles["button-group"]}>
+          <button type="submit">Calculate</button>
+          <button type="button" onClick={() => reset()}>Reset</button>
+        </div>
       </form>
     </div>
   );
