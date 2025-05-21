@@ -21,4 +21,16 @@ describe('BMICalculator result categories', () => {
     expect(await screen.findByText(text)).toBeInTheDocument();
     expect(screen.getByText(bmi)).toBeInTheDocument();
   });
+
+  test('reset button clears inputs', async () => {
+    render(<BMICalculator />);
+    const [weightInput, heightInput] = screen.getAllByRole('textbox');
+
+    await userEvent.type(weightInput, '80');
+    await userEvent.type(heightInput, '170');
+    await userEvent.click(screen.getByRole('button', { name: /reset/i }));
+
+    expect(weightInput.value).toBe('');
+    expect(heightInput.value).toBe('');
+  });
 });

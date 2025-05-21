@@ -97,6 +97,16 @@ button {
   color: var(--c-white);
 }
 
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-group button {
+  flex: 1;
+  width: 100%;
+}
+
 button:hover {
   background-color: var(--c-gray);
   color: var(--c-black-800);
