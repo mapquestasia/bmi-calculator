@@ -1,6 +1,6 @@
 # BMI Calculator
 
-### Updated Read Me 8/22/2024
+### Updated Read Me 8/22/2024 from test-branch
 
 This version adds unit toggles allowing you to enter weight in
 kilograms or pounds and height in centimeters or meters. The selector for
